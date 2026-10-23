@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My personal portfolio website">
+  <title>My Portfolio | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#home">MyPortfolio</a>
+      <button id="menu-toggle" aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+      <h1>Hello, I'm <span>Moti Darji</span></h1>
+      <h2>Aspiring Web Developer</h2>
+      <p>I enjoy learning new technologies and creating
+        beautiful, user-friendly websites.</p>
+      <a class="button" href="#projects">Explore My Work</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I'm a motivated learner interested in web development.
+        I am building my skills in HTML, CSS, and JavaScript
+        and enjoy turning ideas into websites.</p>
+    </section>
+
+    <section id="skills" class="section alternate">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <article class="card">
+          <h3>HTML</h3>
+          <p>Creating structured and accessible web pages.</p>
+        </article>
+        <article class="card">
+          <h3>CSS</h3>
+          <p>Designing attractive, responsive layouts.</p>
+        </article>
+        <article class="card">
+          <h3>JavaScript</h3>
+          <p>Adding interactivity to websites.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Personal Portfolio</h3>
+          <p>A responsive website introducing me and my skills.</p>
+          <span class="tag">HTML · CSS · JavaScript</span>
+        </article>
+        <article class="card">
+          <h3>Landing Page</h3>
+          <p>A sample landing page with a clean, modern design.</p>
+          <span class="tag">HTML · CSS</span>
+        </article>
+        <article class="card">
+          <h3>Interactive Greeting</h3>
+          <p>A small project that responds to a button click.</p>
+          <span class="tag">JavaScript</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section alternate">
+      <h2>Contact Me</h2>
+      <p>Thank you for visiting my portfolio!</p>
+      <p>Email: <a href="mailto:your.email@example.com">
+        motidarji1807@gmail.com</a></p>
+      <button class="button" id="greet-button">Say Hello</button>
+      <p id="greeting" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Moti Darji. All rights reserved.</p>
+  </footer>
+</body>
+</html>
